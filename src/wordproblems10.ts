@@ -62,8 +62,7 @@ function allWordWithFiveVowels(arr: string[]): string[] {
     if (word.length < 5) continue;
     let vowelSet: Set<string> = new Set();
 
-    let splitWord = word.split("");
-    for (let char of splitWord) {
+    for (let char of word) {
       if (vowels.includes(char)) {
         vowelSet.add(char);
       }
