@@ -42,4 +42,8 @@ export const tempWords: string[] = [
   "UU",
   "uu",
   "UUYUUYUUUU",
+  "qat",
+  "scats",
+  "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+  "hohohohohohohohohohohohohohohoohohohohohohohhohohoho",
 ];

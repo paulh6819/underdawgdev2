@@ -44,4 +44,8 @@ exports.tempWords = [
     "UU",
     "uu",
     "UUYUUYUUUU",
+    "qat",
+    "scats",
+    "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+    "hohohohohohohohohohohohohohohoohohohohohohohhohohoho",
 ];
