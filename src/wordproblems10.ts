@@ -49,9 +49,10 @@ const words: string[] = [
   "sh",
   "mm",
   "MM",
+  "aeaeiou",
 ];
 
-// What are all of the words that have all 5 vowels, in alphabetical order
+// What are all of the words that have all 5 vowels, in alphabetical order- with no vowels can be out of alphabetical order
 
 function allWordsWithFiveVowels(arr: string[]): string[] {
   let result: string[] = [];
@@ -77,11 +78,16 @@ function allWordsWithFiveVowels(arr: string[]): string[] {
 
 function allWordsWithAEIOUinAlphbaticalOrder(arr: string[]): string[] {
   let hasAllVowels: string[] = allWordsWithFiveVowels(arr);
+
   return hasAllVowels.filter(
     (word) =>
-      word.indexOf("a") < word.indexOf("e") &&
-      word.indexOf("e") < word.indexOf("i")
+      word.lastIndexOf("a") < word.indexOf("e") &&
+      word.lastIndexOf("e") < word.indexOf("i") &&
+      word.lastIndexOf("i") < word.indexOf("o") &&
+      word.lastIndexOf("o") < word.indexOf("u")
   );
+
+  //compare for each vowel its lastindexOf with the next vowels indexOf, and if lastIndexOf is larger, it fails.
 }
 
 console.log(allWordsWithAEIOUinAlphbaticalOrder(words));
