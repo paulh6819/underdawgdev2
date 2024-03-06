@@ -53,7 +53,7 @@ const words: string[] = [
 
 // What are all of the words that have all 5 vowels, in alphabetical order
 
-function allWordWithFiveVowels(arr: string[]): string[] {
+function allWordsWithFiveVowels(arr: string[]): string[] {
   let result: string[] = [];
 
   let vowels: string = "aeiou";
@@ -76,7 +76,7 @@ function allWordWithFiveVowels(arr: string[]): string[] {
 }
 
 function allWordsWithAEIOUinAlphbaticalOrder(arr: string[]): string[] {
-  let hasAllVowels: string[] = allWordWithFiveVowels(arr);
+  let hasAllVowels: string[] = allWordsWithFiveVowels(arr);
   return hasAllVowels.filter(
     (word) =>
       word.indexOf("a") < word.indexOf("e") &&
