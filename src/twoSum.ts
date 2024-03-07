@@ -8,7 +8,7 @@
  * @returns {number[]} - An array containing the two numbers that sum up to the target.
  */
 
-//a.easiest way: a for loop , and then nest another for loop for add the numbers. test
+//a.easiest way: a for loop , and then nest another for loop for add the numbers. test tes tes
 
 function findTwoNumbers(arr: number[], target: number): number[] {
   for (let i = 0; i < arr.length; i++) {
