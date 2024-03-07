@@ -1,55 +1,4 @@
-// import { tempWords } from "../scripts/tempWordList";
-
-const words: string[] = [
-  "vacuum",
-  "continuum",
-  "luxury",
-  "xylophone",
-  "quartz",
-  "quiz",
-  "catapult",
-  "cater",
-  "strengths",
-  "rhythms",
-  "symphony",
-  "unquestionably",
-  "box",
-  "buxom",
-  "yesterday",
-  "yummy",
-  "crypt",
-  "gypsy",
-  "aeiou",
-  "facetious",
-  "sequoia",
-  "educationally",
-  "queue",
-  "muumuu",
-  "buxomly",
-  "exquisite",
-  "taxonomy",
-  "quixotic",
-  "yakuza",
-  "catty",
-  "catalog",
-  "crystal",
-  "pneumonoultramicroscopicsilicovolcanoconiosis",
-  "subsequent",
-  "ambiguous",
-  "juxtapose",
-  "zealous",
-  "xylography",
-  "UU",
-  "uu",
-  "UUYUUYUUUU",
-  "qat",
-  "scats",
-  "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-  "hohohohohohohohohohohohohohohoohohohohohohohhohohoho",
-  "sh",
-  "mm",
-  "MM",
-];
+import { tempWords } from "../scripts/tempWordList";
 
 // What are all of the words that have all 5 vowels, in alphabetical order
 
@@ -84,4 +33,4 @@ function allWordsWithAEIOUinAlphbaticalOrder(arr: string[]): string[] {
   );
 }
 
-console.log(allWordsWithAEIOUinAlphbaticalOrder(words));
+console.log(allWordsWithAEIOUinAlphbaticalOrder(tempWords));
