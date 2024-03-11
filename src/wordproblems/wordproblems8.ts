@@ -1,4 +1,4 @@
-import { tempWords } from "../scripts/tempWordList";
+import { tempWords } from "../../scripts/tempWordList";
 
 // What are all of the words with no vowel and not even a Y?
 

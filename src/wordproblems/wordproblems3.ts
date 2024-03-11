@@ -1,4 +1,4 @@
-import { tempWords } from "../scripts/tempWordList";
+import { tempWords } from "../../scripts/tempWordList";
 // What are all of the words containing a Q but not a U?
 
 function wordsWithQnotU(arr: string[]): string[] {

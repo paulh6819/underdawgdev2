@@ -1,4 +1,4 @@
-import { tempWords } from "../scripts/tempWordList";
+import { tempWords } from "../../scripts/tempWordList";
 
 // What are all of the words that have a B and an X and are less than 5 letters long?
 
