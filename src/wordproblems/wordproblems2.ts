@@ -1,4 +1,4 @@
-import { tempWords } from "../scripts/tempWordList";
+import { tempWords } from "../../scripts/tempWordList";
 
 // Words with X, Y, and Z: []
 function returnsWordsWithXYZIncluded(arr: string[]): string[] {

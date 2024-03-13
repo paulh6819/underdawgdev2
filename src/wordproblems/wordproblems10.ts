@@ -2,7 +2,7 @@ import { tempWords } from "../scripts/tempWordList";
 
 // What are all of the words that have all 5 vowels, in alphabetical order
 
-function allWordWithFiveVowels(arr: string[]): string[] {
+export function allWordWithFiveVowels(arr: string[]): string[] {
   let result: string[] = [];
 
   let vowels: string = "aeiou";
