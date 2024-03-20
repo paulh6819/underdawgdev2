@@ -80,14 +80,6 @@ function whichIsLessCommonQXZ(arr: string[]): string {
     leastCommon = "z";
   }
 
-  //   console.log(charObj, "this is the char object");
-
-  //   for (let char in charObj) {
-  //     if (charObj[char] < count) {
-  //       leastCommon = char;
-  //       count = charObj[char];
-  //     }
-  //   }
   return leastCommon;
 }
 

@@ -1,8 +1,8 @@
-import { tempWords } from "../../scripts/tempWordList";
-// What are all of the words containing a Q but not a U?
+const parser4 = require("../../scripts/cvsParser");
+const words4 = parser4.takesPath("../../csv/sowpods.txt");
 
 function wordsWithQnotU(arr: string[]): string[] {
-  return arr.filter((word) => word.includes("q") && !word.includes("u"));
+  return arr.filter((word) => word.includes("Q") && !word.includes("U"));
 }
 
-console.log(wordsWithQnotU(tempWords));
+console.log(wordsWithQnotU(words4));
