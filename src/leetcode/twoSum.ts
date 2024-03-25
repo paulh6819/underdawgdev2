@@ -10,14 +10,33 @@
 
 //a.easiest way: a for loop , and then nest another for loop for add the numbers. test tes tes
 
+// function findTwoNumbers(arr: number[], target: number): number[] {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 1; j < arr.length; j++) {
+//       let sum = arr[j] + arr[i];
+//       if (arr[i] !== arr[j] && sum === target) {
+//         console.log([i, j]);
+//         return [arr[i], arr[j]];
+//       }
+//     }
+//   }
+//   return [];
+// }
+
 function findTwoNumbers(arr: number[], target: number): number[] {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 1; j < arr.length; j++) {
-      let sum = arr[j] + arr[i];
-      if (arr[i] !== arr[j] && sum === target) {
-        console.log([i, j]);
-        return [arr[i], arr[j]];
-      }
+  let pointerOne = 0;
+  let pointerTwo = arr.length - 1;
+
+  while (pointerOne < pointerTwo) {
+    let sum = arr[pointerOne] + arr[pointerTwo];
+
+    if (sum === target) {
+      return [arr[pointerOne], arr[pointerTwo]];
+    }
+    if (sum < target) {
+      pointerOne++;
+    } else {
+      pointerTwo--;
     }
   }
   return [];
