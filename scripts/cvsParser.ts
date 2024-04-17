@@ -10,7 +10,7 @@ const fs = require("fs");
 //       4. create a unit test for this -- look up on my own and read the IMB article
 //       5. create an error handling for an empty path
 
-function takesPath(path: any): string[] {
+function takesPath(path: string): string[] {
   let buffer = fs.readFileSync(path);
   let words: string[] = buffer.toString().split("\n");
 
