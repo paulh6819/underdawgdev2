@@ -53,16 +53,73 @@ function conparesStrings(str1: string, str2: string): boolean {
 //prams an array of integeters, an number - that we're looking for, return: if the number is found, the index of the number.
 //else return -1
 
-function searchForNumber(haystack: number[], needle: number): number {
-  for (let i = 0; i < haystack.length; i++) {
-    if (haystack[i] === needle) {
-      return i;
+function searchForNumber(
+  haystack: number[],
+  needle: number,
+  wantAllOccurances: boolean
+): number[] {
+  const resultArray = [];
+  if (!wantAllOccurances) {
+    for (let i = 0; i < haystack.length; i++) {
+      if (haystack[i] === needle) {
+        resultArray.push(i);
+        break;
+      }
     }
   }
-  return -1;
+
+  if (wantAllOccurances) {
+    for (let i = 0; i < haystack.length; i++) {
+      if (haystack[i] === needle) {
+        resultArray.push(i);
+      }
+    }
+  }
+  if (resultArray.length > 0) {
+    return resultArray;
+  } else {
+    return [-1];
+  }
 }
 
-const practiceArray = [4, 7, 8, 4, 8, 345, 6, 1, 9, 45645];
+function searchForNumberTwo(
+  haystack: number[],
+  needle: number,
+  wantAllOccurances: boolean
+): number[] {
+  const resultArray = [];
 
-console.log(searchForNumber(practiceArray, 6));
-console.log(searchForNumber(practiceArray, 73));
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] === needle) {
+      resultArray.push(i);
+      break;
+    }
+  }
+
+  if (wantAllOccurances) {
+    for (let i = resultArray[0] + 1; i < haystack.length; i++) {
+      if (haystack[i] === needle) {
+        resultArray.push(i);
+      }
+    }
+  }
+  if (resultArray.length > 0) {
+    return resultArray;
+  } else {
+    return [-1];
+  }
+}
+
+const practiceArray = [9, 5, 4, 7, 8, 4, 8, 345, 6, 1, 9, 45645, 4];
+
+console.log(searchForNumber(practiceArray, 4, true));
+console.log(searchForNumber(practiceArray, 73, true));
+console.log(searchForNumber(practiceArray, 73, false));
+
+console.log(searchForNumber(practiceArray, 4, false));
+
+console.log(searchForNumberTwo(practiceArray, 4, true));
+console.log(searchForNumberTwo(practiceArray, 73, true));
+console.log(searchForNumberTwo(practiceArray, 73, false));
+
+console.log(searchForNumberTwo(practiceArray, 4, false));
