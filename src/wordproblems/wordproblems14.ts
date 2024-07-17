@@ -1,5 +1,4 @@
 // What is the longest palindrome?
-import { tempWords } from "../../scripts/tempWordList";
 
 const tempwords10: string[] = [
   "vacuum",
