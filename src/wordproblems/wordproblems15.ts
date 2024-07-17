@@ -5,6 +5,8 @@
 const parser15 = require("../../scripts/cvsParser");
 const words15 = parser5.takesPath("../../csv/sowpods.txt");
 
-function noTwoLettersInARow(arr: string[]): string[] {
-  const letterObj = { A: 0, B: 0 };
-}
+let practiceLetters = "";
+
+// function noTwoLettersInARow(arr: string[]): string[] {
+//   const letterObj = { A: 0, B: 0 , C:0, D:0};
+// }
