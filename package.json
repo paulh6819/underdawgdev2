@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc",
-    "file": "ts-node"
+    "file": "tsx"
   },
   "author": "Paul",
   "license": "ISC",
